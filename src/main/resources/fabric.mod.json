@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "optionssavermod",
+	"version": "${version}",
+	"name": "OptionsSaverMod",
+	"description": "Option saver mod",
+	"authors": [
+		"Vethre"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/project/control-saver-mod",
+		"sources": "https://github.com/V3thre/ControlSaverMod.git"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/optionssavermod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.example.OptionsSaverMod"
+		],
+		"client": [
+			"com.example.OptionsSaverModClient"
+		]
+	},
+	"mixins": [
+		"optionssavermod.mixins.json",
+		{
+			"config": "optionssavermod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
