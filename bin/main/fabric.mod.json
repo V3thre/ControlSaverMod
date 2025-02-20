@@ -1,38 +1,38 @@
 {
 	"schemaVersion": 1,
-	"id": "optionsavermod-1204",
+	"id": "optionsavermod-1214",
 	"version": "${version}",
-	"name": "OptionSaverMod-1.20.4",
-	"description": "Option Saving mod, 1.20.4 version",
+	"name": "OptionSaverMod 1.21.4",
+	"description": "This super cool mod saves your options!! so you dont have too!!!",
 	"authors": [
-		"Vethre"
+		"Me!"
 	],
 	"contact": {
-		"homepage": "https://modrinth.com/project/control-saver-mod",
-		"sources": "https://github.com/V3thre/ControlSaverMod.git"
+		"homepage": "https://modrinth.com/mod/control-saver-mod",
+		"sources": "https://github.com/V3thre/ControlSaverMod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/optionsavermod-1204/icon.png",
+	"icon": "assets/optionsavermod-1214/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.OptionSaverMod1204"
+			"com.example.OptionSaverMod1214"
 		],
 		"client": [
-			"com.example.OptionSaverMod1204Client"
+			"com.example.OptionSaverMod1214Client"
 		]
 	},
 	"mixins": [
-		"optionsavermod-1204.mixins.json",
+		"optionsavermod-1214.mixins.json",
 		{
-			"config": "optionsavermod-1204.client.mixins.json",
+			"config": "optionsavermod-1214.client.mixins.json",
 			"environment": "client"
 		}
 	],
 	"depends": {
-		"fabricloader": ">=0.16.5",
-		"minecraft": "~1.20.4",
-		"java": ">=17",
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
 		"fabric-api": "*"
 	},
 	"suggests": {
